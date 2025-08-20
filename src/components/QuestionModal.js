@@ -15,13 +15,25 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
 
   const renderMedia = () => {
     if (question.type === 'image' && question.media) {
-      return <img src={question.media} alt="Вопрос" />;
+      return (
+        <div className="media-content">
+          <img src={question.media} alt="Вопрос" />
+        </div>
+      );
     }
     if (question.type === 'audio' && question.media) {
-      return <audio controls src={question.media} />;
+      return (
+        <div className="media-content">
+          <audio controls src={question.media} />
+        </div>
+      );
     }
     if (question.type === 'video' && question.media) {
-      return <video controls src={question.media} />;
+      return (
+        <div className="media-content">
+          <video controls src={question.media} />
+        </div>
+      );
     }
     return null;
   };
@@ -30,36 +42,41 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="question-modal" onClick={e => e.stopPropagation()}>
         <div className="question-price">Вопрос за {question.price} очков</div>
-        {question.special && (
-          <div className="special-notice" style={{textAlign: 'center', color: '#ff6b6b', marginBottom: '20px'}}>
+        
+        {question.special && !showAnswer && (
+          <div className="special-notice">
+            ⚡ СПЕЦИАЛЬНЫЙ ВОПРОС ⚡
+          </div>
+        )}
+
+        {question.special && showAnswer && (
+          <div className="special-notice">
             ⚡ {question.special.toUpperCase()} ⚡
           </div>
         )}
         
         <div className="question-text">{question.text}</div>
         
-        {renderMedia() && (
-          <div className="media-content">
-            {renderMedia()}
-          </div>
-        )}
+        {renderMedia()}
 
         {showAnswer ? (
           <>
-            <div className="answer-text" style={{textAlign: 'center', fontSize: '1.3rem', margin: '20px 0'}}>
+            <div className="answer-text">
               <strong>Ответ:</strong> {question.answer}
             </div>
             
-            <div style={{margin: '20px 0'}}>
-              <h3 style={{textAlign: 'center', marginBottom: '15px'}}>Выберите игрока:</h3>
+            <div style={{margin: '25px 0'}}>
+              <h3 style={{textAlign: 'center', marginBottom: '20px', color: '#64ffda'}}>
+                Выберите игрока:
+              </h3>
               <div className="players-grid">
                 {players.map(player => (
                   <div
                     key={player.id}
                     className={`player-card ${selectedPlayer === player.id ? 'selected' : ''}`}
                     style={{
-                      border: selectedPlayer === player.id ? '2px solid #ffd700' : 'none',
-                      cursor: 'pointer'
+                      border: selectedPlayer === player.id ? '2px solid #64ffda' : '1px solid #8892b0',
+                      transform: selectedPlayer === player.id ? 'translateY(-2px)' : 'none'
                     }}
                     onClick={() => setSelectedPlayer(player.id)}
                   >
@@ -90,7 +107,11 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
           <div style={{textAlign: 'center'}}>
             <button
               className="answer-button"
-              style={{background: '#9c27b0', color: 'white'}}
+              style={{
+                background: 'linear-gradient(135deg, #6a11cb, #2575fc)',
+                color: 'white',
+                border: '1px solid #6a11cb'
+              }}
               onClick={() => setShowAnswer(true)}
             >
               Показать ответ

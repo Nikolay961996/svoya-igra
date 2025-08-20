@@ -83,6 +83,90 @@
           "type": "text"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Искусство",
+      "questions": [
+        {
+          "id": 11,
+          "text": "Кто написал картину 'Чёрный квадрат'?",
+          "price": 100,
+          "answer": "Казимир Малевич",
+          "type": "text"
+        },
+        {
+          "id": 12,
+          "text": "Автор картины 'Утро в сосновом лесу'",
+          "price": 200,
+          "answer": "Иван Шишкин",
+          "type": "text"
+        },
+        {
+          "id": 13,
+          "text": "Что изображено на этой картине?",
+          "price": 300,
+          "answer": "Мона Лиза (Джоконда)",
+          "type": "image",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+        },
+        {
+          "id": 14,
+          "text": "Самый известный русский иконописец",
+          "price": 400,
+          "answer": "Андрей Рублёв",
+          "type": "text"
+        },
+        {
+          "id": 15,
+          "text": "Кто автор 'Герники'?",
+          "price": 500,
+          "answer": "Пабло Пикассо",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "География",
+      "questions": [
+        {
+          "id": 16,
+          "text": "Самая длинная река в мире",
+          "price": 100,
+          "answer": "Нил",
+          "type": "text"
+        },
+        {
+          "id": 17,
+          "text": "Столица Австралии",
+          "price": 200,
+          "answer": "Канберра",
+          "type": "text"
+        },
+        {
+          "id": 18,
+          "text": "Самая высокая гора в мире",
+          "price": 300,
+          "answer": "Эверест",
+          "type": "text"
+        },
+        {
+          "id": 19,
+          "text": "Узнайте страну по контуру",
+          "price": 400,
+          "answer": "Италия",
+          "type": "image",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Italy_%28orthographic_projection%29.svg/800px-Italy_%28orthographic_projection%29.svg.png"
+        },
+        {
+          "id": 20,
+          "text": "Крупнейшее озеро в мире",
+          "price": 500,
+          "answer": "Каспийское море",
+          "type": "text"
+        }
+      ]
     }
   ]
 }
