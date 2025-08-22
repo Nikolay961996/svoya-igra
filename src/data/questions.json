@@ -2,7 +2,7 @@
   "themes": [
     {
       "id": 1,
-      "name": "История",
+      "name": "От бабушки Антонины",
       "questions": [
         {
           "id": 1,
@@ -13,10 +13,11 @@
         },
         {
           "id": 2,
-          "text": "Кто был первым императором России?",
+          "text": "Кто изображен на портрете?",
           "price": 200,
           "answer": "Пётр I",
-          "type": "text"
+          "type": "image",
+          "media": "../assets/images/history/peter.jpg"
         },
         {
           "id": 3,
@@ -28,10 +29,11 @@
         },
         {
           "id": 4,
-          "text": "Год основания Санкт-Петербурга",
+          "text": "Какое историческое событие изображено?",
           "price": 400,
-          "answer": "1703 год",
-          "type": "text"
+          "answer": "Куликовская битва",
+          "type": "image",
+          "media": "../assets/images/history/battle.jpg"
         },
         {
           "id": 5,
@@ -45,80 +47,39 @@
     },
     {
       "id": 2,
-      "name": "Наука",
+      "name": "От бабушки Любы",
       "questions": [
         {
           "id": 6,
-          "text": "Самая близкая к Земле звезда",
-          "price": 100,
-          "answer": "Солнце",
-          "type": "text"
-        },
-        {
-          "id": 7,
-          "text": "Химическая формула воды",
-          "price": 200,
-          "answer": "H₂O",
-          "type": "text"
-        },
-        {
-          "id": 8,
-          "text": "Единица измерения силы тока",
-          "price": 300,
-          "answer": "Ампер",
-          "type": "text"
-        },
-        {
-          "id": 9,
-          "text": "Автор теории относительности",
-          "price": 400,
-          "answer": "Альберт Эйнштейн",
-          "type": "text"
-        },
-        {
-          "id": 10,
-          "text": "Количество хромосом у человека",
-          "price": 500,
-          "answer": "46",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Искусство",
-      "questions": [
-        {
-          "id": 11,
-          "text": "Кто написал картину 'Чёрный квадрат'?",
+          "text": "Кто написал эту картину?",
           "price": 100,
           "answer": "Казимир Малевич",
           "type": "text"
         },
         {
-          "id": 12,
+          "id": 7,
           "text": "Автор картины 'Утро в сосновом лесу'",
           "price": 200,
           "answer": "Иван Шишкин",
           "type": "text"
         },
         {
-          "id": 13,
+          "id": 8,
           "text": "Что изображено на этой картине?",
           "price": 300,
           "answer": "Мона Лиза (Джоконда)",
           "type": "image",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+          "media": "../assets/images/mona-lisa.jpg"
         },
         {
-          "id": 14,
+          "id": 9,
           "text": "Самый известный русский иконописец",
           "price": 400,
           "answer": "Андрей Рублёв",
           "type": "text"
         },
         {
-          "id": 15,
+          "id": 10,
           "text": "Кто автор 'Герники'?",
           "price": 500,
           "answer": "Пабло Пикассо",
@@ -127,44 +88,130 @@
       ]
     },
     {
-      "id": 4,
-      "name": "География",
+      "id": 3,
+      "name": "От сестры Кати",
       "questions": [
         {
-          "id": 16,
+          "id": 11,
           "text": "Самая длинная река в мире",
           "price": 100,
           "answer": "Нил",
           "type": "text"
         },
         {
-          "id": 17,
+          "id": 12,
           "text": "Столица Австралии",
           "price": 200,
           "answer": "Канберра",
           "type": "text"
         },
         {
-          "id": 18,
+          "id": 13,
           "text": "Самая высокая гора в мире",
           "price": 300,
           "answer": "Эверест",
           "type": "text"
         },
         {
-          "id": 19,
+          "id": 14,
           "text": "Узнайте страну по контуру",
           "price": 400,
           "answer": "Италия",
           "type": "image",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Italy_%28orthographic_projection%29.svg/800px-Italy_%28orthographic_projection%29.svg.png"
+          "media": "../assets/images/italy-map.png"
         },
         {
-          "id": 20,
+          "id": 15,
           "text": "Крупнейшее озеро в мире",
           "price": 500,
           "answer": "Каспийское море",
           "type": "text"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "От мамы Светланы",
+      "questions": [
+        {
+          "id": 16,
+          "text": "Автор 'Лунной сонаты'",
+          "price": 100,
+          "answer": "Людвиг ван Бетховен",
+          "type": "text"
+        },
+        {
+          "id": 17,
+          "text": "Прослушайте фрагмент и назовите композитора",
+          "price": 200,
+          "answer": "Вольфганг Амадей Моцарт",
+          "type": "audio",
+          "media": "../assets/audio/music.mp3"
+        },
+        {
+          "id": 18,
+          "text": "Сколько струн у скрипки?",
+          "price": 300,
+          "answer": "4",
+          "type": "text"
+        },
+        {
+          "id": 19,
+          "text": "Основоположник русской классической музыки",
+          "price": 400,
+          "answer": "Михаил Глинка",
+          "type": "text"
+        },
+        {
+          "id": 20,
+          "text": "Просмотрите видеофрагмент и назовите произведение",
+          "price": 500,
+          "answer": "Лебединое озеро",
+          "type": "video",
+          "media": "../assets/video/fragment.mp4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "От папы Андрея",
+      "questions": [
+        {
+          "id": 16,
+          "text": "Автор 'Лунной сонаты'",
+          "price": 100,
+          "answer": "Людвиг ван Бетховен",
+          "type": "text"
+        },
+        {
+          "id": 17,
+          "text": "Прослушайте фрагмент и назовите композитора",
+          "price": 200,
+          "answer": "Вольфганг Амадей Моцарт",
+          "type": "audio",
+          "media": "../assets/audio/music.mp3"
+        },
+        {
+          "id": 18,
+          "text": "Сколько струн у скрипки?",
+          "price": 300,
+          "answer": "4",
+          "type": "text"
+        },
+        {
+          "id": 19,
+          "text": "Основоположник русской классической музыки",
+          "price": 400,
+          "answer": "Михаил Глинка",
+          "type": "text"
+        },
+        {
+          "id": 20,
+          "text": "Просмотрите видеофрагмент и назовите произведение",
+          "price": 500,
+          "answer": "Лебединое озеро",
+          "type": "video",
+          "media": "../assets/video/fragment.mp4"
         }
       ]
     }

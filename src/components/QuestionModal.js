@@ -1,9 +1,30 @@
 import React, { useState } from 'react';
 
+// Импортируем медиафайлы
+import monaLisa from '../assets/images/mona-lisa.jpg';
+import italyMap from '../assets/images/italy-map.png';
+import peterImage from '../assets/images/history/peter.jpg';
+import battleImage from '../assets/images/history/battle.jpg';
+import musicAudio from '../assets/audio/music.mp3';
+import fragmentVideo from '../assets/video/fragment.mp4';
+
 const QuestionModal = ({ question, players, onAnswer, onClose }) => {
   const [showQuestion, setShowQuestion] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
+
+  // Функция для получения медиафайла по пути
+  const getMediaByPath = (path) => {
+    const mediaMap = {
+      '../assets/images/mona-lisa.jpg': monaLisa,
+      '../assets/images/italy-map.png': italyMap,
+      '../assets/images/history/peter.jpg': peterImage,
+      '../assets/images/history/battle.jpg': battleImage,
+      '../assets/audio/music.mp3': musicAudio,
+      '../assets/video/fragment.mp4': fragmentVideo,
+    };
+    return mediaMap[path] || path;
+  };
 
   const handleAnswer = (isCorrect) => {
     if (isCorrect && selectedPlayer) {
@@ -15,24 +36,28 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
   };
 
   const renderMedia = () => {
-    if (question.type === 'image' && question.media) {
+    if (!question.media) return null;
+
+    const mediaSource = getMediaByPath(question.media);
+
+    if (question.type === 'image') {
       return (
         <div className="media-content">
-          <img src={question.media} alt="Вопрос" />
+          <img src={mediaSource} alt="Вопрос" />
         </div>
       );
     }
-    if (question.type === 'audio' && question.media) {
+    if (question.type === 'audio') {
       return (
         <div className="media-content">
-          <audio controls src={question.media} />
+          <audio controls src={mediaSource} />
         </div>
       );
     }
-    if (question.type === 'video' && question.media) {
+    if (question.type === 'video') {
       return (
         <div className="media-content">
-          <video controls src={question.media} />
+          <video controls src={mediaSource} />
         </div>
       );
     }
