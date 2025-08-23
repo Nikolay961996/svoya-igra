@@ -2,22 +2,23 @@
   "themes": [
     {
       "id": 1,
-      "name": "От бабушки Антонины",
+      "name": "История",
       "questions": [
         {
           "id": 1,
           "text": "В каком году произошла Куликовская битва?",
           "price": 100,
-          "answer": "1380 год",
-          "type": "text"
+          "type": "video",
+          "media": "/media/video/fragment.mp4",
+          "answerMedia": "/media/audio/music.mp3",
+          "answerMediaType": "audio"
         },
         {
           "id": 2,
-          "text": "Кто изображен на портрете?",
+          "text": "Кто был первым императором России?",
           "price": 200,
           "answer": "Пётр I",
-          "type": "image",
-          "media": "../assets/images/history/peter.jpg"
+          "type": "text"
         },
         {
           "id": 3,
@@ -29,11 +30,10 @@
         },
         {
           "id": 4,
-          "text": "Какое историческое событие изображено?",
+          "text": "Год основания Санкт-Петербурга",
           "price": 400,
-          "answer": "Куликовская битва",
-          "type": "image",
-          "media": "../assets/images/history/battle.jpg"
+          "answer": "1703 год",
+          "type": "text"
         },
         {
           "id": 5,
@@ -47,171 +47,156 @@
     },
     {
       "id": 2,
-      "name": "От бабушки Любы",
+      "name": "Наука",
       "questions": [
         {
           "id": 6,
-          "text": "Кто написал эту картину?",
+          "text": "Самая близкая к Земле звезда",
           "price": 100,
-          "answer": "Казимир Малевич",
+          "answer": "Солнце",
           "type": "text"
         },
         {
           "id": 7,
-          "text": "Автор картины 'Утро в сосновом лесу'",
+          "text": "Химическая формула воды",
           "price": 200,
-          "answer": "Иван Шишкин",
+          "answer": "H₂O",
           "type": "text"
         },
         {
           "id": 8,
-          "text": "Что изображено на этой картине?",
+          "text": "Единица измерения силы тока",
           "price": 300,
-          "answer": "Мона Лиза (Джоконда)",
-          "type": "image",
-          "media": "../assets/images/mona-lisa.jpg"
+          "answer": "Ампер",
+          "type": "text"
         },
         {
           "id": 9,
-          "text": "Самый известный русский иконописец",
+          "text": "Автор теории относительности",
           "price": 400,
-          "answer": "Андрей Рублёв",
+          "answer": "Альберт Эйнштейн",
           "type": "text"
         },
         {
           "id": 10,
-          "text": "Кто автор 'Герники'?",
+          "text": "Количество хромосом у человека",
           "price": 500,
-          "answer": "Пабло Пикассо",
+          "answer": "46",
           "type": "text"
         }
       ]
     },
     {
       "id": 3,
-      "name": "От сестры Кати",
+      "name": "Искусство",
       "questions": [
         {
           "id": 11,
+          "text": "Кто написал картину 'Чёрный квадрат'?",
+          "price": 100,
+          "answer": "Казимир Малевич",
+          "type": "text"
+        },
+        {
+          "id": 12,
+          "text": "Автор картины 'Утро в сосновом лесу'",
+          "price": 200,
+          "answer": "Иван Шишкин",
+          "type": "text"
+        },
+        {
+          "id": 13,
+          "text": "Что изображено на этой картине?",
+          "price": 300,
+          "answer": "Мона Лиза (Джоконда)",
+          "type": "image",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+        },
+        {
+          "id": 14,
+          "text": "Самый известный русский иконописец",
+          "price": 400,
+          "answer": "Андрей Рублёв",
+          "type": "text"
+        },
+        {
+          "id": 15,
+          "text": "Кто автор 'Герники'?",
+          "price": 500,
+          "answer": "Пабло Пикассо",
+          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/PicassoGuernica.jpg/800px-PicassoGuernica.jpg",
+          "answerMediaType": "image",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "География",
+      "questions": [
+        {
+          "id": 16,
           "text": "Самая длинная река в мире",
           "price": 100,
           "answer": "Нил",
           "type": "text"
         },
         {
-          "id": 12,
+          "id": 17,
           "text": "Столица Австралии",
           "price": 200,
           "answer": "Канберра",
           "type": "text"
         },
         {
-          "id": 13,
+          "id": 18,
           "text": "Самая высокая гора в мире",
           "price": 300,
           "answer": "Эверест",
+          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/800px-Everest_kalapatthar.jpg",
+          "answerMediaType": "image",
           "type": "text"
         },
         {
-          "id": 14,
+          "id": 19,
           "text": "Узнайте страну по контуру",
           "price": 400,
           "answer": "Италия",
           "type": "image",
-          "media": "../assets/images/italy-map.png"
+          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Italy_%28orthographic_projection%29.svg/800px-Italy_%28orthographic_projection%29.svg.png"
         },
         {
-          "id": 15,
+          "id": 20,
           "text": "Крупнейшее озеро в мире",
           "price": 500,
           "answer": "Каспийское море",
+          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Caspian_Sea_from_orbit.jpg/800px-Caspian_Sea_from_orbit.jpg",
+          "answerMediaType": "image",
           "type": "text"
         }
       ]
     },
     {
-      "id": 4,
-      "name": "От мамы Светланы",
+      "id": 5,
+      "name": "Музыка",
       "questions": [
         {
-          "id": 16,
-          "text": "Автор 'Лунной сонаты'",
+          "id": 21,
+          "text": "Послушайте фрагмент и назовите композитора",
           "price": 100,
           "answer": "Людвиг ван Бетховен",
-          "type": "text"
-        },
-        {
-          "id": 17,
-          "text": "Прослушайте фрагмент и назовите композитора",
-          "price": 200,
-          "answer": "Вольфганг Амадей Моцарт",
           "type": "audio",
-          "media": "../assets/audio/music.mp3"
+          "media": "https://example.com/beethoven.mp3",
+          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/800px-Beethoven.jpg",
+          "answerMediaType": "image"
         },
         {
-          "id": 18,
-          "text": "Сколько струн у скрипки?",
-          "price": 300,
-          "answer": "4",
-          "type": "text"
-        },
-        {
-          "id": 19,
-          "text": "Основоположник русской классической музыки",
-          "price": 400,
-          "answer": "Михаил Глинка",
-          "type": "text"
-        },
-        {
-          "id": 20,
-          "text": "Просмотрите видеофрагмент и назовите произведение",
-          "price": 500,
-          "answer": "Лебединое озеро",
-          "type": "video",
-          "media": "../assets/video/fragment.mp4"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "От папы Андрея",
-      "questions": [
-        {
-          "id": 16,
-          "text": "Автор 'Лунной сонаты'",
-          "price": 100,
-          "answer": "Людвиг ван Бетховен",
-          "type": "text"
-        },
-        {
-          "id": 17,
-          "text": "Прослушайте фрагмент и назовите композитора",
+          "id": 22,
+          "text": "Какой инструмент звучит в этом фрагменте?",
           "price": 200,
-          "answer": "Вольфганг Амадей Моцарт",
+          "answer": "Скрипка",
           "type": "audio",
-          "media": "../assets/audio/music.mp3"
-        },
-        {
-          "id": 18,
-          "text": "Сколько струн у скрипки?",
-          "price": 300,
-          "answer": "4",
-          "type": "text"
-        },
-        {
-          "id": 19,
-          "text": "Основоположник русской классической музыки",
-          "price": 400,
-          "answer": "Михаил Глинка",
-          "type": "text"
-        },
-        {
-          "id": 20,
-          "text": "Просмотрите видеофрагмент и назовите произведение",
-          "price": 500,
-          "answer": "Лебединое озеро",
-          "type": "video",
-          "media": "../assets/video/fragment.mp4"
+          "media": "https://example.com/violin.mp3"
         }
       ]
     }

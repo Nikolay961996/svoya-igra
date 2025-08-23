@@ -1,30 +1,9 @@
 import React, { useState } from 'react';
 
-// Импортируем медиафайлы
-import monaLisa from '../assets/images/mona-lisa.jpg';
-import italyMap from '../assets/images/italy-map.png';
-import peterImage from '../assets/images/history/peter.jpg';
-import battleImage from '../assets/images/history/battle.jpg';
-import musicAudio from '../assets/audio/music.mp3';
-import fragmentVideo from '../assets/video/fragment.mp4';
-
 const QuestionModal = ({ question, players, onAnswer, onClose }) => {
   const [showQuestion, setShowQuestion] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
-
-  // Функция для получения медиафайла по пути
-  const getMediaByPath = (path) => {
-    const mediaMap = {
-      '../assets/images/mona-lisa.jpg': monaLisa,
-      '../assets/images/italy-map.png': italyMap,
-      '../assets/images/history/peter.jpg': peterImage,
-      '../assets/images/history/battle.jpg': battleImage,
-      '../assets/audio/music.mp3': musicAudio,
-      '../assets/video/fragment.mp4': fragmentVideo,
-    };
-    return mediaMap[path] || path;
-  };
 
   const handleAnswer = (isCorrect) => {
     if (isCorrect && selectedPlayer) {
@@ -35,29 +14,27 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
     onClose();
   };
 
-  const renderMedia = () => {
-    if (!question.media) return null;
+  const renderMedia = (mediaUrl, mediaType, isAnswer = false) => {
+    if (!mediaUrl) return null;
 
-    const mediaSource = getMediaByPath(question.media);
-
-    if (question.type === 'image') {
+    if (mediaType === 'image' || (!mediaType && mediaUrl.match(/\.(jpg|jpeg|png|gif|webp)$/i))) {
       return (
-        <div className="media-content">
-          <img src={mediaSource} alt="Вопрос" />
+        <div className={`media-content ${isAnswer ? 'answer-media' : ''}`}>
+          <img src={mediaUrl} alt={isAnswer ? "Ответ" : "Вопрос"} />
         </div>
       );
     }
-    if (question.type === 'audio') {
+    if (mediaType === 'audio' || mediaUrl.match(/\.(mp3|wav|ogg)$/i)) {
       return (
-        <div className="media-content">
-          <audio controls src={mediaSource} />
+        <div className={`media-content ${isAnswer ? 'answer-media' : ''}`}>
+          <audio controls src={mediaUrl} />
         </div>
       );
     }
-    if (question.type === 'video') {
+    if (mediaType === 'video' || mediaUrl.match(/\.(mp4|webm|ogg)$/i)) {
       return (
-        <div className="media-content">
-          <video controls src={mediaSource} />
+        <div className={`media-content ${isAnswer ? 'answer-media' : ''}`}>
+          <video controls src={mediaUrl} />
         </div>
       );
     }
@@ -103,7 +80,7 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
           )}
           <div className="question-price">Вопрос за {question.price} очков</div>
           <div className="question-text">{question.text}</div>
-          {renderMedia()}
+          {renderMedia(question.media, question.type)}
           <div style={{textAlign: 'center', marginTop: '30px'}}>
             <button
               className="answer-button"
@@ -133,10 +110,13 @@ const QuestionModal = ({ question, players, onAnswer, onClose }) => {
         )}
         <div className="question-price">Вопрос за {question.price} очков</div>
         <div className="question-text">{question.text}</div>
-        {renderMedia()}
+        {renderMedia(question.media, question.type)}
         
-        <div className="answer-text">
-          <strong>Ответ:</strong> {question.answer}
+        <div className="answer-section">
+          <div className="answer-text">
+            <strong>Ответ:</strong> {question.answer}
+          </div>
+          {renderMedia(question.answerMedia, question.answerMediaType, true)}
         </div>
         
         <div style={{margin: '25px 0'}}>
