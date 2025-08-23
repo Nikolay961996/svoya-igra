@@ -2,201 +2,203 @@
   "themes": [
     {
       "id": 1,
-      "name": "История",
+      "name": "Вопросы от Светланы. Детство",
       "questions": [
         {
           "id": 1,
-          "text": "В каком году произошла Куликовская битва?",
           "price": 100,
-          "type": "video",
-          "media": "/media/video/fragment.mp4",
-          "answerMedia": "/media/audio/music.mp3",
-          "answerMediaType": "audio"
+          "type": "image",
+          "media": "/media/image/whos-vera.jpg",
+          "text": "Кто из изображенных на фото - Вера",
+          "answer": "Крайняя слева"
         },
         {
           "id": 2,
-          "text": "Кто был первым императором России?",
           "price": 200,
-          "answer": "Пётр I",
-          "type": "text"
+          "type": "text",
+          "text": "Будучи дегустатором Вера дала название этому продукту «патёнка». Назовите этот продукт.",
+          "answer": "Сгущенка",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/patenka.mp4"
         },
         {
           "id": 3,
-          "text": "Столица Древней Руси до Москвы",
           "price": 300,
-          "answer": "Киев",
           "type": "text",
-          "special": "кот в мешке"
+          "text": "Какую команду подавала Катя Вере, когда они катались на велосипеде?",
+          "answer": "Поворачивай!",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/comanda-velosipeda.mp4"
         },
         {
           "id": 4,
-          "text": "Год основания Санкт-Петербурга",
           "price": 400,
-          "answer": "1703 год",
-          "type": "text"
+          "type": "text",
+          "text": "«Дергается, не хочет, чтоб снимали» - про какую вкуснятину так сказала Вера",
+          "answer": "Рыбки",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/dergaetsa.mp4",
+          "special": "кот в мешке"
         },
         {
           "id": 5,
-          "text": "Последний российский император",
           "price": 500,
-          "answer": "Николай II",
           "type": "text",
+          "text": "Какая прическа была у Веры на первый день рождения?",
+          "answer": "Антенка с голубой ленточкой",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/pricheska.mp4",
           "special": "аукцион"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Наука",
+      "name": "Вопросы от Светланы. Юность",
       "questions": [
         {
           "id": 6,
-          "text": "Самая близкая к Земле звезда",
           "price": 100,
-          "answer": "Солнце",
-          "type": "text"
+          "type": "text",
+          "text": "Какую вкусняшку приготовила Вера Артему на День Рождение по теме «Гарри Поттер»?",
+          "answer": "Письма из Хогвартса",
+          "answerMediaType": "image",
+          "answerMedia": "/media/image/potter-sweets.jpg"
         },
         {
           "id": 7,
-          "text": "Химическая формула воды",
           "price": 200,
-          "answer": "H₂O",
-          "type": "text"
+          "type": "image",
+          "text": "Из какой ткани сделана верхняя часть спецодежды Веры",
+          "media": "/media/image/super-dress.jpg",
+          "answer": "Из мусорного пакета"
         },
         {
           "id": 8,
-          "text": "Единица измерения силы тока",
           "price": 300,
-          "answer": "Ампер",
-          "type": "text"
+          "type": "text",
+          "text": "В 2022 году так нестандартно поздравила Катя Веру при помощи этого инструмента. Назовите этот инструмент.",
+          "answer": "Аккардеон",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/katya-present.mp4"
         },
         {
           "id": 9,
-          "text": "Автор теории относительности",
           "price": 400,
-          "answer": "Альберт Эйнштейн",
-          "type": "text"
+          "type": "text",
+          "text": "Этот подарок сделала Вера Артему. Артем назвал это самой лучшей вещью в мире. Что это за вещь?",
+          "answer": "Книга 'Дневник 3'",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/the-best-present.mp4"
         },
         {
           "id": 10,
-          "text": "Количество хромосом у человека",
           "price": 500,
-          "answer": "46",
-          "type": "text"
+          "type": "image",
+          "text": "Для чего Вера фотографировала эти многочисленные предметы?",
+          "media": "/media/image/boots.jpg",
+          "answer": "Дипломная работа",
+          "answerMediaType": "image",
+          "answerMedia": "/media/image/diploma.jpg"
         }
       ]
     },
     {
       "id": 3,
-      "name": "Искусство",
+      "name": "Вопросы от Светланы. Творчество",
       "questions": [
         {
           "id": 11,
-          "text": "Кто написал картину 'Чёрный квадрат'?",
           "price": 100,
-          "answer": "Казимир Малевич",
-          "type": "text"
+          "type": "image",
+          "text": "Кто был первым наставником Веры по акварельной живописи?",
+          "media": "/media/image/first-teacher.jpg",
+          "answer": "т.Люда Евстафьева"
         },
         {
           "id": 12,
-          "text": "Автор картины 'Утро в сосновом лесу'",
           "price": 200,
-          "answer": "Иван Шишкин",
-          "type": "text"
+          "type": "text",
+          "text": "Про кого или про что была первая Верина сольная песня на сцене?",
+          "answer": "Про осень",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/first-vera-song.mp4"
         },
         {
           "id": 13,
-          "text": "Что изображено на этой картине?",
           "price": 300,
-          "answer": "Мона Лиза (Джоконда)",
           "type": "image",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+          "text": "Кого Вера нарисовала на этом портрете?",
+          "media": "/media/image/portret.jpg",
+          "answer": "т.Люда Евстафьева"
         },
         {
           "id": 14,
-          "text": "Самый известный русский иконописец",
           "price": 400,
-          "answer": "Андрей Рублёв",
-          "type": "text"
+          "type": "text",
+          "text": "Какой музыкальный инструмент освоила Вера?",
+          "answer": "Флейта",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/learned-music-instrument.mp4"
         },
         {
           "id": 15,
-          "text": "Кто автор 'Герники'?",
           "price": 500,
-          "answer": "Пабло Пикассо",
-          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/PicassoGuernica.jpg/800px-PicassoGuernica.jpg",
-          "answerMediaType": "image",
-          "type": "text"
+          "type": "image",
+          "text": "Как называется это полотно известного в наших кругах художника?",
+          "media": "/media/image/polotno.jpg",
+          "answer": "«Ночной город»"
         }
       ]
     },
     {
       "id": 4,
-      "name": "География",
+      "name": "Вопросы от Светланы. Работа",
       "questions": [
         {
           "id": 16,
-          "text": "Самая длинная река в мире",
           "price": 100,
-          "answer": "Нил",
-          "type": "text"
+          "type": "text",
+          "text": "Вера работала в 2012 году продавщицей этого популярного напитка, которую часто покупают в жару. Назовите напиток.",
+          "answer": "Квас",
+          "answerMediaType": "image",
+          "answerMedia": "/media/image/drink-profession.jpg"
         },
         {
           "id": 17,
-          "text": "Столица Австралии",
           "price": 200,
-          "answer": "Канберра",
-          "type": "text"
+          "type": "text",
+          "text": "В роли хариографа Вера в детстве поставила танец и станцевала под свою любимую песню. Назовите песню.",
+          "answer": "Песня разбойников (Бременские музыканты)",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/liked-dance.mp4"
         },
         {
           "id": 18,
-          "text": "Самая высокая гора в мире",
           "price": 300,
-          "answer": "Эверест",
-          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/800px-Everest_kalapatthar.jpg",
-          "answerMediaType": "image",
-          "type": "text"
+          "type": "text",
+          "text": "У кого Вера работала Рикшей?",
+          "answer": "У Джека",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/riksha.mp4"
         },
         {
           "id": 19,
-          "text": "Узнайте страну по контуру",
           "price": 400,
-          "answer": "Италия",
-          "type": "image",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Italy_%28orthographic_projection%29.svg/800px-Italy_%28orthographic_projection%29.svg.png"
+          "type": "text",
+          "text": "«Я упала с сеновала» - кому такую прическу сделала Вера?",
+          "answer": "Домику - ключнице",
+          "answerMediaType": "video",
+          "answerMedia": "/media/video/i-droped-from-senoval.mp4"
         },
         {
           "id": 20,
-          "text": "Крупнейшее озеро в мире",
           "price": 500,
-          "answer": "Каспийское море",
-          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Caspian_Sea_from_orbit.jpg/800px-Caspian_Sea_from_orbit.jpg",
+          "type": "text",
+          "text": "Кем работала Вера в 'Логове маньяка' и помогала избавиться от определенного рода проблем?",
+          "answer": "Дефектолого",
           "answerMediaType": "image",
-          "type": "text"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Музыка",
-      "questions": [
-        {
-          "id": 21,
-          "text": "Послушайте фрагмент и назовите композитора",
-          "price": 100,
-          "answer": "Людвиг ван Бетховен",
-          "type": "audio",
-          "media": "https://example.com/beethoven.mp3",
-          "answerMedia": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beethoven.jpg/800px-Beethoven.jpg",
-          "answerMediaType": "image"
-        },
-        {
-          "id": 22,
-          "text": "Какой инструмент звучит в этом фрагменте?",
-          "price": 200,
-          "answer": "Скрипка",
-          "type": "audio",
-          "media": "https://example.com/violin.mp3"
+          "answerMedia": "/media/image/logovo-manyaka.jpg"
         }
       ]
     }
